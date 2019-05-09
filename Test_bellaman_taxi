@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May  9 13:32:46 2019
+
+@author: maachou
+"""
+from Bellman import bellman
+
+taxi=bellman(500,6,"Taxi-v2",0.3,0.01,50000,0.8)   
+taxi.train() 
+taxi.visualize() 
